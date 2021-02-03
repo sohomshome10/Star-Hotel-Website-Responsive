@@ -1,0 +1,951 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+/* font-family: 'Lato', sans-serif; */
+/* font-family: 'Ubuntu', sans-serif; */
+*{
+    margin:0;
+    padding:0;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font:100%/1.5em;
+    overflow-x: hidden;
+}
+.container{
+    width:1170px;
+    margin:0 auto;
+    max-width:100%;
+}
+.container-fluid{
+    width:100%;
+    margin:0 auto;
+    max-width:100%;
+    float: left;
+}
+.container .columns{
+    float:left;
+    text-align:center;
+    max-width:100%;
+    height:auto;
+}
+.container .columns.one {width:8.33333333%}
+.container .columns.two {width:16.6666667%}
+.container .columns.three {width:25%}
+.container .columns.four {width:33.3333333%}
+.container .columns.five {width:41.6666666%}
+.container .columns.six {width:50%}
+.container .columns.seven {width:58.3333333%}
+.container .columns.eight {width:66.6666666%}
+.container .columns.nine {width:75%}
+.container .columns.ten {width:83.3333333%}
+.container .columns.eleven {width:91.6666666%}
+.container .columns.twelve {width:100%}
+
+.clearfix {
+    content: ".";
+    clear: both;
+    display: block;
+    /* height: 0px; */
+}
+.img-fluid {
+    max-width:100%;
+    height:auto;
+}
+.text-center{
+    text-align:center;
+}
+.headerwrapper{
+    background: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.navbar li{
+    list-style: none;
+    display: inline-block;
+    font-size: 23px;
+    margin: 0 10px;
+}
+.navbar li a{
+    font-size: 23px;
+    color: white;
+    text-decoration: none;
+    padding-bottom: 5px;
+    transition: all .4s;
+}
+.navbar li a:hover{
+    font-size: 23px;
+    color: #a67c52;
+    border-bottom: 1px solid #fff;
+}
+.logo{
+    flex: 2;
+    text-align: left;
+}
+.social li{
+    margin: 0 3px;
+}
+.nav ul{
+    margin-right: 10px;
+}
+.nav ul li:nth-child(5){
+    border-right: 2px solid white;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.content h1{
+    font-size: 45px;
+    margin-top: 400px;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.hotelwrapper{
+    background: #e5e6e5;
+    padding: 60px 0;
+}
+.hotelcontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hoteltext{
+    margin-left: 60px;
+    padding: 0 50px;
+}
+.hoteltext h2{
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 20px;
+    padding-top: 0;
+}
+.hoteltext p{
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 30px;
+    font-family: 'Lato', sans-serif;
+    line-height: 22px;
+}
+.hoteltext h3{
+    font-size: 28px;
+    text-align: right;
+    margin-bottom: 5px;
+    font-family: 'Lato', sans-serif;
+    line-height: 22px;
+}
+.hoteltext h5{
+    font-size: 17px;
+    text-align: right;
+    font-family: 'Lato', sans-serif;
+    line-height: 22px;
+}
+.roomcontent{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: left;
+    margin-bottom: 30px;
+}
+.roomcontent h2{
+    margin-top: 10px;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+}
+.roomwrapper{
+    padding: 50px 0;
+}
+.roomwrapper h1{
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.roomwrapper h1 span{
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+.btn{
+    outline: none;
+    border: none;
+    background-color: #a67c52;
+    padding: 12px 35px;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.btn:hover{
+    background: #3624b8;
+}
+.images{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+}
+.images img{
+    height: 300px;
+    width: 377px;
+    object-fit: cover;
+}
+.gallerywrapper{
+    background-color: #e5e6e5;
+    padding: 50px 0 20px 0;
+}
+.gallerywrapper h1{
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+.service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service div{
+    margin: 0 30px;
+}
+.service h2{
+    font-size: 45px;
+    margin: 10px 0 20px 0;
+}
+.service p{
+    font-size: 17px;
+    text-align: left;
+}
+.serviceswrapper h1{
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+.serviceswrapper{
+    padding: 60px 0;
+}
+.fbannerwrapper{
+    background: url(../img/fbanner.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 40px;
+}
+.fbannerwrapper h1{
+    font-size: 40px;
+    color: white;
+    margin-top: 200px;
+    width: 350px;
+    text-align: center;
+    margin: 200px auto 5px auto;
+    font-weight: 500;
+}
+.newstext{
+    text-align: left;
+    margin: auto 0;
+}
+.newstext h4{
+    text-transform: uppercase;
+    color: #929295;
+    margin-bottom: 8px;
+}
+.newsform input{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #929295;
+    color: #929295;
+    margin: 0 10px;
+    padding: 10px 0;
+    font-size: 18px;
+}
+.nbtn{
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #3624b8;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.nbtn:hover{
+    background-color: #a67c52;
+}
+.newswrapper{
+    padding: 40px 0;
+    border-top: 1px solid #929295;
+    border-bottom: 1px solid #929295;
+}
+.f2 h1{
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 3px solid #3624b8;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 10px;
+}
+/* .f2 h1::after{
+    content: "";
+    width: 200px;
+    height: 20px;
+    background-color: #3624b8;
+} */
+.f2 p{
+    font-size: 18px;
+    text-align: left;
+    margin-left: 70px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.f2 span{
+    color: #3624b8;
+    font-weight: 700;
+}
+.f3 h1{
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: 10px;
+    border-bottom: 3px solid #ff4338;
+    padding-bottom: 10px;
+}
+.socialm ul{
+    text-align: left;
+    margin-left: 70px;
+    margin-top: 60px;
+}
+
+.socialm li{
+    list-style: none;
+    display: inline-block;
+    font-size: 35px;
+    margin-right: 15px;
+}
+.f3 input{
+    outline: none;
+    width: 333px;
+    height: 35px;
+    border: none;
+    background: #dedede;
+    margin: 2px 0;
+    padding: 20px;
+    border-radius: 5px;
+    color: #bababa;
+}
+.footerwrapper{
+    padding: 40px 0;
+    border-bottom: 1px solid #929295;
+}
+.footerimg img{
+    margin: 100px 0;
+}
+#submit{
+    background-color: #3624b8;
+    text-align: left;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    float: left;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+#submit:hover{
+    background-color: #a67c52;
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copyright p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #a4a4a4;
+}
+#c1 span{
+    color: #000;
+}
+#c2{
+    border-left: 3px solid #a4a4a4;
+    margin-left: 40px;
+}
+#c2 span{
+    margin-left: 20px;
+}
+#c3 span{
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.copy1{
+    flex: 1;
+}
+.copy2{
+    flex: 1;
+}
+.copy3{
+    flex: 1;
+}
+.copywrapper{
+    padding: 20px 0;
+}
+
+
+@media screen and (max-width: 575px){
+    .logo{
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .nav{
+        width: 100%;
+        text-align: center;
+        order: 3;
+    }
+    .nav ul{
+        background-color: #000;
+        margin-right: 0px;
+        padding: 10px 0;
+    }
+    .nav li{
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .nav ul li:nth-child(5){
+        border-right: none;
+        padding-right: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .navbar li{
+        margin: 0;
+        margin: 10px 0;
+    }
+    .navbar{
+        padding: 0px;
+    }
+    .social{
+        width: 100%;
+    }
+    .social li{
+        margin: 20px 5px;
+    }
+    .content h1{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .hotelimg{
+        width: 100%;
+    }
+    .hotelcontent{
+        flex-direction: column;
+    }
+    .hotelcontent img{
+        width: 100%;
+    }
+    .hoteltext{
+        margin-left: 0px;
+        padding: 0 20px;
+        text-align: justify;
+        width: 100%;
+    }
+    .hoteltext h2{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .hoteltext h3{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .hoteltext h5{
+        text-align: center;
+    }
+    .hoteltext p{
+        text-align: left;
+    }
+    .roomcontent{
+        display: block;
+    }
+    .roomcontent img{
+        width: 100%;
+    }
+    .roomcontent div{
+        margin-top: 20px;
+    }
+    .roomcontent h2{
+        text-align: center;
+        font-weight: 500;
+    }
+    .images{
+        display: block;
+    }
+    .images img{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .service{
+        display: block;
+    }
+    .service div{
+        margin: 30px 0;
+        text-align: center;
+        padding: 20px;
+    }
+    .service p{
+        text-align: justify;
+        font-size: 20px;
+    }
+    .newstext h4{
+        text-align: center;
+    }
+    .newstext h3{
+        text-align: center;
+    }
+    .newsform{
+        width: 100%;
+    }
+    .container .columns.five{
+        width: 100%;
+    }
+    .container .columns.seven{
+        width: 100%;
+    }
+    form{
+        margin-top: 20px;
+    }
+    .newsform input{
+        width: 80%;
+        margin-top: 20px;
+    }
+    .nbtn{
+        margin-top: 20px;
+    }
+    .footerimg img{
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 30px;
+    }
+    .footerimg{
+        margin: 0 auto;
+    }
+    .container .columns.three{
+        width: 100%;
+    }
+    .f2 p{
+        margin-left: 20px;
+    }
+    .socialm ul{
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    .f3 h1{
+        text-align: center;
+        margin-top: 50px;
+    }
+    .container .columns.four{
+        width: 100%;
+    }
+    #submit{
+        margin-left: 15px;
+        text-align: center;
+    }
+    .copyright{
+        display: block;
+    }
+
+    #c2{
+        margin-left: 0px;
+        border: none;
+    }
+    .copyright p{
+        margin-bottom: 5px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .logo{
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .nav{
+        width: 100%;
+        text-align: center;
+        order: 3;
+    }
+    .nav ul{
+        background-color: #000;
+        margin-right: 0px;
+        padding: 10px 0;
+    }
+    .nav li{
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .nav ul li:nth-child(5){
+        border-right: none;
+        padding-right: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .navbar li{
+        margin: 0;
+        margin: 10px 0;
+    }
+    .navbar{
+        padding: 0px;
+    }
+    .social{
+        width: 100%;
+    }
+    .social li{
+        margin: 20px 5px;
+    }
+    .content h1{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .hotelimg{
+        width: 100%;
+    }
+    .hotelcontent{
+        flex-direction: column;
+    }
+    .hotelcontent img{
+        width: 100%;
+    }
+    .hoteltext{
+        margin-left: 0px;
+        padding: 0 20px;
+        text-align: justify;
+        width: 100%;
+    }
+    .hoteltext h2{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .hoteltext h3{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .hoteltext h5{
+        text-align: center;
+    }
+    .hoteltext p{
+        text-align: left;
+    }
+    .roomcontent{
+        display: block;
+    }
+    .roomcontent img{
+        width: 100%;
+    }
+    .roomcontent div{
+        margin-top: 20px;
+    }
+    .roomcontent h2{
+        text-align: center;
+        font-weight: 500;
+    }
+    .images{
+        display: block;
+    }
+    .images img{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .service{
+        display: block;
+    }
+    .service div{
+        margin: 30px 0;
+        text-align: center;
+        padding: 20px;
+    }
+    .service p{
+        text-align: justify;
+        font-size: 20px;
+    }
+    .newstext h4{
+        text-align: center;
+    }
+    .newstext h3{
+        text-align: center;
+    }
+    .newsform{
+        width: 100%;
+    }
+    .container .columns.five{
+        width: 100%;
+    }
+    .container .columns.seven{
+        width: 100%;
+    }
+    form{
+        margin-top: 20px;
+    }
+    .newsform input{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .nbtn{
+        margin-top: 20px;
+    }
+    .footerimg img{
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 30px;
+    }
+    .footerimg{
+        margin: 0 auto;
+    }
+    .container .columns.three{
+        width: 100%;
+    }
+    .f2 p{
+        margin-left: 20px;
+    }
+    .socialm ul{
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    .f3 h1{
+        text-align: center;
+        margin-top: 50px;
+    }
+    .f3 input{
+        width: 100%;
+    }
+    .container .columns.four{
+        width: 100%;
+    }
+    #submit{
+        margin-left: 260px;
+        text-align: center;
+    }
+    .copyright{
+        display: block;
+    }
+
+    #c2{
+        margin-left: 0px;
+        border: none;
+    }
+    .copyright p{
+        margin-bottom: 5px;
+    }
+    form{
+        padding: 0 20px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .logo{
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .nav{
+        width: 100%;
+        text-align: center;
+        order: 3;
+    }
+    .nav ul{
+        background-color: #000;
+        margin-right: 0px;
+        padding: 10px 0;
+    }
+    .nav li{
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .nav ul li:nth-child(5){
+        border-right: none;
+        padding-right: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .navbar li{
+        margin: 0;
+        margin: 10px 0;
+    }
+    .navbar{
+        padding: 0px;
+    }
+    .social{
+        width: 100%;
+    }
+    .social li{
+        margin: 20px 5px;
+    }
+    .content h1{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .hotelimg{
+        width: 100%;
+    }
+    .hotelcontent{
+        flex-direction: column;
+    }
+    .hotelcontent img{
+        width: 100%;
+    }
+    .hoteltext{
+        margin-left: 0px;
+        padding: 0 20px;
+        text-align: justify;
+        width: 100%;
+    }
+    .hoteltext h2{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .hoteltext h3{
+        text-align: right;
+        margin-top: 10px;
+    }
+    .hoteltext h5{
+        text-align: right;
+    }
+    .hoteltext p{
+        text-align: left;
+    }
+    .roomcontent{
+        display: block;
+    }
+    .roomcontent img{
+        width: 100%;
+    }
+    .roomcontent div{
+        margin-top: 20px;
+    }
+    .roomcontent h2{
+        text-align: center;
+        font-weight: 500;
+    }
+    .images{
+        display: block;
+    }
+    .images img{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .service{
+        display: block;
+    }
+    .service div{
+        margin: 30px 0;
+        text-align: center;
+        padding: 20px;
+    }
+    .service p{
+        text-align: justify;
+        font-size: 20px;
+    }
+    .newstext h4{
+        text-align: center;
+    }
+    .newstext h3{
+        text-align: center;
+    }
+    .newsform{
+        width: 100%;
+    }
+    .container .columns.five{
+        width: 100%;
+    }
+    .container .columns.seven{
+        width: 100%;
+    }
+    form{
+        margin-top: 20px;
+    }
+    .newsform input{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .nbtn{
+        margin-top: 20px;
+    }
+    .footerimg img{
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 30px;
+    }
+    .footerimg{
+        margin: 0 auto;
+    }
+    .container .columns.three{
+        width: 100%;
+    }
+    .f2 p{
+        margin-left: 20px;
+    }
+    .socialm ul{
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    .f3 h1{
+        text-align: center;
+        margin-top: 50px;
+    }
+    .f3 input{
+        width: 100%;
+    }
+    .container .columns.four{
+        width: 100%;
+    }
+    #submit{
+        margin-left: 0px;
+        text-align: center;
+    }
+    .copyright{
+        display: block;
+    }
+
+    #c2{
+        margin-left: 0px;
+        border: none;
+    }
+    .copyright p{
+        margin-bottom: 5px;
+    }
+    form{
+        padding: 0 20px;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+
+
+
